@@ -1,0 +1,14 @@
+{
+  "name": "mindorbit",
+  "version": "1.1.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "setup:model": "node scripts/setup-model.mjs"
+  },
+  "engines": { "node": ">=20" }
+}
