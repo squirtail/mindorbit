@@ -2,7 +2,7 @@
 
 A privacy-first astronaut wellbeing companion built from the supplied MindOrbit blueprint. Chat uses **Gemma 3 4B through a local Ollama runtime**, with clearly labeled guided fallback. Version 1.2 adds dated measurements, learned personal baselines, private care plans with outcome reviews, and optional local journal-pattern analysis. Crew and mission demonstrations are fictional; personal readings are entered or imported by the user. No sensor is connected. This prototype does not diagnose conditions, operate medical alerting, or contact Earth.
 
-For uploading the project and sharing it with teammates or judges, see [the GitHub sharing guide](GITHUB.md). The full Gemma companion runs locally; a GitHub repository shares the code, not a hosted AI service.
+The full Gemma companion runs locally; a GitHub repository shares the code, not a hosted AI service. Website is still viewable without Gemma; only the chat companion function requires Gemma.
 
 ## Run
 
