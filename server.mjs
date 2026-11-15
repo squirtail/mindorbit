@@ -11,7 +11,7 @@ function json(res,status,body){res.writeHead(status,{...SECURITY,'Content-Type':
 async function readJson(req){
   if(req.headers['content-type']?.split(';')[0].trim().toLowerCase()!=='application/json')throw new InputError('Use application/json.');
   const chunks=[];let size=0;
-  for await(const chunk of req){size+=chunk.length;if(size>65536)throw new InputError('Chat request is too large.');chunks.push(chunk);}
+  for await(const chunk of req){size+=chunk.length;if(size>524288)throw new InputError('Chat request is too large.');chunks.push(chunk);}
   try{return JSON.parse(Buffer.concat(chunks).toString('utf8'));}catch{throw new InputError('Invalid JSON.');}
 }
 export function createAppServer({companion=createCompanion()}={}){return http.createServer(async(req,res)=>{
